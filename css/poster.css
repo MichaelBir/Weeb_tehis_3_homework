@@ -21,11 +21,12 @@ html {
 
 .movie-title {
     text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 .movie-poster-container img {
     margin-top: 2rem;
-    height: 400px;
+    height: 500px;
     border-radius: 5px;
     cursor: pointer;
     animation: slide-from-left 4s ease-in-out forwards;
