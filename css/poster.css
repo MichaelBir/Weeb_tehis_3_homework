@@ -26,18 +26,63 @@ html {
 
 .movie-poster-container img {
     margin-top: 2rem;
-    height: 500px;
+    height: 400px;
     border-radius: 5px;
-    cursor: pointer;
-    animation: slide-from-left 4s ease-in-out forwards;
+   /* animation: slide-from-left 4s ease-in-out forwards;
     transition: all 1s;
     position: relative;
-    left: -50rem;
-   
+    left: -50rem;*/ 
+    
 }
-@keyframes slide-from-left{
+/*@keyframes slide-from-left{
     70%{left: 1rem;}
     100%{left: 0;}
+}*/
+
+.model{
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.247);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.model-content{
+    background-color: rgba(63, 62, 62, 0.824);
+    margin: 5rem auto;
+    padding: 5rem;
+    width: 600px;
+    height: 600px;
+    animation: zoom-in 1s;
+}
+
+@keyframes zoom-in {
+    0% {transform: scale(0);}
+    100%{transform: scale(1);}
+}
+
+.model-content h1 {
+    color:  #fff;
+    text-transform: uppercase;
+}
+
+.closeBtn {
+    float: right;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.movie-poster-model{
+    width: 290px;
+}
+
+.movie-poster {
+    cursor: pointer;
+    
 }
 
 .movie-rating {
