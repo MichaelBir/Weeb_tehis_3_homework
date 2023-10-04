@@ -10,7 +10,7 @@
 html {
     font-family: 'Roboto', sans-serif;
     color: #151515;
-    background-color: #d1caca;
+    background-color: #5f5d5d;
 }
 
 .movie-card {
@@ -39,6 +39,58 @@ html {
     100%{left: 0;}
 }*/
 
+.carusel{
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carusel img {
+    width: 500px;
+    height: 350px;
+   
+}
+
+.carusel .carusel__item,
+.carusel .carusel__item--hidden{
+    display: none;
+}
+
+.carusel .carusel__item--visible{
+    display: block;
+    animation: fadeIn 1s;
+    cursor: pointer;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.carusel .carusel__actions{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+  
+    transform: translateY(-50%);
+}
+
+.carusel .carusel__actions button{
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 40px;
+    width: 40px;
+    border: 0;
+    background-color: rgba(48, 48, 48, 0.477);
+    font-size: 1.5rem;
+    color: white;
+    margin: 6.5rem;
+}
+
+
 .model{
     display: none;
     position: fixed;
@@ -52,11 +104,12 @@ html {
 }
 
 .model-content{
-    background-color: rgba(63, 62, 62, 0.824);
+    background-color: rgba(34, 33, 33, 0.824);
     margin: 5rem auto;
-    padding: 5rem;
+    padding: 3rem;
     width: 600px;
     height: 600px;
+    border-radius: 10px;
     animation: zoom-in 1s;
 }
 
@@ -105,7 +158,7 @@ html {
     color: #151515a4;
     font-style: italic;
     font-size: 1.2rem;
-    margin-top: 1rem;
+    margin-top: 4rem;
     margin-bottom: 1rem;
     transform: translateX(650px);
     animation: slide-from-right 3.5s ease-in-out forwards; 
@@ -163,6 +216,8 @@ html {
     align-items: center;
     justify-content: center;
 }
+
+
 
 footer {
     margin-top: 0rem;
